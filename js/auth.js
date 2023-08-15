@@ -13,7 +13,7 @@ function checkPswd() {
     // login Main - Exam Records
     }
     else if( username == "icmit" && password == "icmit") {
-      window.location="https://sites.google.com/view/innocmf/it-team-reports";
+      window.location="https://sites.google.com/view/innocmf/daily-report/";
     // login Main - IT Team Reports
     }
     else if( username == "admin1" && password == "admin") {
