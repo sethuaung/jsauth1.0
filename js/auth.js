@@ -5,7 +5,7 @@ function checkPswd() {
          window.location="#";
     }
     else if( username == "icm1" && password == "icm1") {
-      window.location.href="https://sites.google.com/view/innocmf/";
+      window.location.href="https://sites.google.com/view/innocmf/career";
     // login Google Site - External
     }
     else if( username == "icmfadmin" && password == "icmfadmin") {
@@ -13,7 +13,7 @@ function checkPswd() {
     // login Main - Exam Records
     }
     else if( username == "icmit" && password == "icmit") {
-      window.location="https://sites.google.com/view/innocmf/daily-report/";
+      window.location="https://sites.google.com/view/innocmf/it-team-reports";
     // login Main - IT Team Reports
     }
     else if( username == "admin1" && password == "admin") {
