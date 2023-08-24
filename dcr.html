@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Collection Template</title>
+<meta charset="UTF-8">
+<!-- Define keywords for search engines: -->
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<!-- Define a description of your web page: -->
+<meta name="description" content="Felixent's Web Templates for HTML and CSS">
+<!-- Define the author of a page: -->
+<meta name="author" content="Mosquito">
+<!-- Refresh document every 30 seconds: -->
+<!-- <meta http-equiv="refresh" content="30"> -->
+<!-- Setting the viewport to make your website look good on all devices: -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Favicons -->
+<link href="images/logo/inno-logo.ico" rel="icon">
+<link href="images/logo/sg_logo_200x200.png" rel="felix-logo">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>ICM</b> Inno Capital Microfinance</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="https://sites.google.com/view/innocmf" class="w3-bar-item w3-button">Home</a>
+      <a href="indexM.html#project2" class="w3-bar-item w3-button">Tools</a>
+      <a href="indexM.html#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-container">
+  <h2>Collection Report</h2>
+  <p></p>
+  </div>
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openInfo('ClientInfo')">Daily Collection</button>
+  </div>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9ulqxJsELQpAfxIABLFDdsKlYYs5682WVjAh2DHdAMR8tyQ/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">  
+    <div id="ClientInfo" class="w3-container info" style="display: none;">
+        <div class="w3-row-padding w3-padding-16">
+          <div class="w3-col m3">
+            <label for="p" class="w3-text-teal"><b>Choose Branch</b></label>
+              <select class="w3-select" id="division" name="entry.1162786883">
+                  <option value="Thanlyin Branch" disabled selected>Choose your branch</option>
+                  <option value="Head Office">Head Office</option>
+                  <option value="South Okkalapa">South Okkalapa</option>
+                  <option value="Thanlyin">Thalyin</option>
+                  <option value="Taikkyi">Taikkyi</option>
+                  <option value="Mawlamyine">Mawlamyine</option>
+                  <option value="Magway">Magway</option>
+                  <option value="Naypyitaw">Naypyitaw</option>
+                  <option value="Mingaladon">Mingaladon</option>
+                  <option value="Billin">Billin</option>
+                  <option value="Thongwa">Thongwa</option>
+                  <option value="Sagaing">Sagaing</option>
+                  <option value="Dawei">Dawei</option>
+                  <option value="Panglong">Panglong</option>
+                  <option value="Hpa_an">Hpa_an</option>
+                  <option value="Htan Ta Pin">Htan Ta Pin</option>
+              </select>
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Collection Date</b></label>
+            <input class="w3-input w3-border" id="date" name="entry.957517461" type="date" placeholder="collectiondate" required name="date">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Total Villages</b></label>
+            <input class="w3-input w3-border" id="totalvillages" name="entry.121117841" type="number" placeholder="Total Villages" required name="Total Villages">
+          </div>       
+        </div>
+        <div class="w3-row-padding w3-padding-16">
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Total Clients</b></label>
+            <input class="w3-input w3-border" id="totalclients" name="entry.66117768" type="number" placeholder="Total Clients" required name="Total Clients">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+            <input class="w3-input w3-border" id="collectionamount" name="entry.1464137031" type="number" placeholder="Collection Amount" required name="Collection Amount">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Actual Collected Clients</b></label>
+            <input class="w3-input w3-border" id="acoclients" name="
+            entry.1196809864" type="number" placeholder="Actual Collected Clients" required name="acoclients">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Actual Collected Amount</b></label>
+            <input class="w3-input w3-border" id="acoamount" name="entry.999172378" type="number" placeholder="Actual Collected Amount" required name="acoamount">
+          </div>
+          
+        </div>
+      
+        <div class="w3-row-padding w3-padding-16">
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Remaining Clients</b></label>
+            <input class="w3-input w3-border" id="remainingclients" name="entry.1313337293" type="number" placeholder="Remaining Clients" required name="remainingclients">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Remaining Amount</b></label>
+            <input class="w3-input w3-border" id="remainingamount" name="entry.1671360575" type="number" placeholder="Remaining Amount" required name="remainingamount">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>New Appointment Date</b></label>
+            <input class="w3-input w3-border" id="appdate" name="entry.167448148" type="date" placeholder="New Appointment Date" required name="appdate">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Overdue Collection</b></label>
+            <input class="w3-input w3-border" id="withinmonth" name="entry.1150562011" type="number" placeholder="Within Month" required name="withinmonth">
+          </br>
+            <input class="w3-input w3-border" id="lastmonth" name="entry.1030610327" type="number" placeholder="Last Month" required name="lastmonth">
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding">
+        <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button><br>
+      </div>
+      </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://sites.google.com/view/innocmf/daily-collection/';}"></iframe>
+      </div>
+      <script>
+      function openInfo(infoName) {
+        var i;
+        var x = document.getElementsByClassName("info");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        document.getElementById(infoName).style.display = "block";  
+      }
+      </script>
+      
+      <!-- End page content -->
+      </div>
+      <!-- Footer -->
+      <footer class="w3-center w3-black w3-padding-16">
+        <p class="w3-small">Themes Designed by <a href="https://sethuaung.github.io" title="mosquito" target="_blank" class="w3-hover-text-green">mosquito</a></p>
+        <p class="w3-small"><a href="t&c.html">Terms & Conditions</a></p>
+      </footer>
+      
+      </body>
+      </html>
