@@ -30,8 +30,8 @@
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="https://sites.google.com/view/innocmf" class="w3-bar-item w3-button">Home</a>
-      <a href="indexM.html#project2" class="w3-bar-item w3-button">Tools</a>
-      <a href="indexM.html#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="dcr.html" class="w3-bar-item w3-button">Report</a>
+      <a href="dcrr.html" class="w3-bar-item w3-button">Report-Records</a>
     </div>
   </div>
 </div>
@@ -43,7 +43,7 @@
   <p></p>
   </div>
   <div class="w3-bar w3-black">
-    <button class="w3-bar-item w3-button" onclick="openInfo('ClientInfo')">Daily Collection</button>
+    <p class="w3-bar-item w3-button" onclick="openInfo('ClientInfo')">Daily Collection</p>
   </div>
   <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9ulqxJsELQpAfxIABLFDdsKlYYs5682WVjAh2DHdAMR8tyQ/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">  
     <div id="ClientInfo" class="w3-container info" style="display: none;">
@@ -124,8 +124,13 @@
         <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button><br>
       </div>
       </form>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://sites.google.com/view/innocmf/daily-collection/';}"></iframe>
-      </div>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='dcr.html';}"></iframe>
+    </div>
+      <script>
+        function clickqq() {
+          alert("Let's go Babe!");
+        }
+        </script>
       <script>
       function openInfo(infoName) {
         var i;
