@@ -16,8 +16,8 @@ function checkPswd() {
       window.location="https://sites.google.com/view/innocmf/it-team-reports";
     // login Main - IT Team Reports
     }
-    else if( username == "admin1" && password == "admin") {
-      window.location="#";
+    else if( username == "opm" && password == "admin") {
+      window.location="dcr.html";
     // login Main
     }
     else if( username == "admin2" && password == "admin") {
