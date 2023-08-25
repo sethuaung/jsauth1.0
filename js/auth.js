@@ -20,8 +20,8 @@ function checkPswd() {
       window.location="dcr.html";
     // login Main
     }
-    else if( username == "admin2" && password == "admin") {
-      window.location="#";
+    else if( username == "icmadmin" && password == "admin") {
+      window.location="https://sites.google.com/view/innocmf/";
     // login Main
     }
     else if( username == "admin3" && password == "admin") {
