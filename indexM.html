@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inno Capital Microfinance</title>
+<meta charset="UTF-8">
+<!-- Define keywords for search engines: -->
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<!-- Define a description of your web page: -->
+<meta name="description" content="Felixent's Web Templates for HTML and CSS">
+<!-- Define the author of a page: -->
+<meta name="author" content="Mosquito">
+<!-- Refresh document every 30 seconds: -->
+<!-- <meta http-equiv="refresh" content="30"> -->
+<!-- Redirect document after 1800 seconds: -->
+<meta http-equiv="refresh" content="1800;URL='https://sethuaung.github.io/inno/'" />
+<!-- Setting the viewport to make your website look good on all devices: -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Favicons -->
+<link href="images/logo/inno-logo.ico" rel="icon">
+<link href="images/logo/Banner_LOGO_1600_900-scaled-178x79.jpg" rel="felix-logo">
+<!-- Gold prices -->
+<script type="text/javascript" src="https://www.bullionvault.com/chart/bullionvaultchart.js" ></script>
+<script type="text/javascript" >
+  var options = {
+    bullion: 'gold',
+    currency: 'USD',
+    timeframe: '1w',
+    chartType: 'line',
+    miniChartModeAxis: 'oz',
+    referrerID: 'sethuaung',
+    containerDefinedSize: true,
+    miniChartMode: false,
+    displayLatestPriceLine: true,
+    switchBullion: true,
+    switchCurrency: true,
+    switchTimeframe: true,
+    switchChartType: true,
+    exportButton: true
+  };
+  var chartBV = new BullionVaultChart(options, 'gold');
+</script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="indexM.html#home" class="w3-bar-item w3-button"><b>ICM</b> Inno Capital Microfinance</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="indexM.html#project1" class="w3-bar-item w3-button">Products</a>
+      <a href="indexM.html#project2" class="w3-bar-item w3-button">Tools</a>
+      <!-- <a href="index-sys.html" class="w3-bar-item w3-button">System</a> -->
+      <a href="indexM.html#contact" class="w3-bar-item w3-button">Contact</a>
+    <button onclick="document.getElementById('idadm').style.display='block'" class="w3-button w3-green w3-large">Admin Login</button>
+    <div id="idadm" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('idadm').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+          <img src="images/logo/inno-fav.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+        </div>
+        <form class="w3-container" action="index-sysM.html">
+          <div class="w3-section">
+            <label><b>Username</b></label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+            <label><b>Password</b></label>
+            <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+            <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+            <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+          </div>
+        </form>
+        <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+          <button onclick="document.getElementById('idadm').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+          <span class="w3-right w3-padding w3-hide-small">Forgot <a href="indexM.html#contact">password?</a></span>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>ICM</b></span> <span class="w3-hide-small w3-text-light-grey">Inno Capital Microfinance</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Products Section -->
+  <div class="w3-container w3-padding-32" id="project1">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Utilities tools.</h3>
+    <p>Here's a list of tools and apps that are mentioned in the sections of this article. Some of the tools are built into Web-base, Windows, and others are types of apps you can explore.</p>
+  </div>
+<hr>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">MIFOS</div>
+        <img src="images/mifos800x800.png" alt="prod" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cpanel</div>
+        <img src="images/cpanel800x800.png" alt="cpanel" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">ERP</div>
+        <img src="images/erp800x800.png" alt="erp" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Webmail</div>
+        <img src="images/mail800x800.png" alt="mail" style="width:100%">
+      </div>
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">PasswordGenerator</div>
+        <img src="images/pswdx800x800.png" alt="mifos" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">TicketSysten</div>
+        <img src="images/ostkt800x800.png" alt="ostkt" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">UAT</div>
+        <img src="images/mifosuat800x800.png" alt="uat" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Internet SpeedTest</div>
+        <img src="images/spdx80x800.png" alt="spt" style="width:100%">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Tools Section -->
+  <div class="w3-container w3-padding-32" id="project2">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>INNO Capital Microfinance Co., Ltd. was established under the purpose of implementing Global CSR (Corporate Social Responsibility) in Myanmar and it is a financial intuition that provides microfinance service to Myanmar people with various financial services.</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> No ( 144 / A ) Parami Road, 4 Ward South Oakkalarpa Township, YGN, MM.<br>
+    <i class="fa fa-phone" style="width:30px"></i> +95 – 9441 327308<br>
+    <i class="fa fa-envelope w3-hover-opacity" style="width: 30px;"></i> voc@innocmf.com​<br>
+  <br><hr>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/mifos800x800.png" alt="pro" style="width:100%">
+      <h3>Core System</h3>
+      <p class="w3-opacity">Production Environment</p>
+      <p>hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://mifos.innocmf.com:334/';">Explore</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/mifosuat800x800.png" alt="uat" style="width:100%">
+      <h3>UAT</h3>
+      <p class="w3-opacity">UAT Environment</p>
+      <p>hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://mifosuat.innocmf.com:9090/';">Explore</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/erp800x800.png" alt="odoo" style="width:100%">
+      <h3>Odoo ERP</h3>
+      <p class="w3-opacity">ERP</p>
+      <p>hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://erp.innocmf.com/';">Explore</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/ostkt800x800.png" alt="pro" style="width:100%">
+      <h3>Ticket System</h3>
+      <p class="w3-opacity">Opensource Ticket System</p>
+      <p>hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://innohelpdesk.innocmf.com/scp/';">Explore</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/mail800x800.png" alt="odoo" style="width:100%">
+      <h3>Webmail</h3>
+      <p class="w3-opacity">Webmail Login</p>
+      <p>hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="window.location='#';">Explore</button></p>
+    </div><br>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/pswdx800x800.png" alt="pwdg" style="width:100%">
+      <h3>Password Generator</h3>
+      <p class="w3-opacity">Generates secure, random password</p>
+      <p>hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="window.location='indexPwd.html';">Explore</button></p>
+    </div>
+  </div><hr>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="#" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+<!-- Weather -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/17d1096d15/yangon-region/" data-label_1="YANGON REGION" data-label_2="WEATHER" data-theme="original" >YANGON REGION WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script><br> 
+<!-- Image of location/map -->
+<!-- <div class="w3-container" style="width: 100%;">
+  <iframe src="https://maps.co/embed/64c72a9168cb1661080457gcmd0542a" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+  <br> -->
+<!-- Gold Prices-->
+  <!-- <div id="gold" style="height: 400px; width: 660px; "></div> -->
+  <iframe src="https://www.google.com/maps/d/embed?mid=1KMRgAiOD4iz-eEMUsCrmAoK1-01JO5E&ehbc=2E312F" width="100%" height="500"></iframe>
+</div>
+<!-- Ex-Rate Currency Widget -->
+<!-- <iframe src="https://ex-rate.com/widget/?c=USDEURJPYGBPAUDCADCHFHKD&s=454c5effffffff6224" style="width:100%;border:0;height:299px"></iframe>
+<a href="https://ex-rate.com/" style="display: block;text-align: right;font-size: .8em;margin-top: .5em;" target="_blank">Currency Calculator: Exchange Rates for Today</a> -->
+<!-- END Ex-Rate Currency Widget -->
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p class="w3-small">Themes Designed by <a href="https://sethuaung.github.io" title="mosquito" target="_blank" class="w3-hover-text-green">mosquito</a></p>
+  <p class="w3-small"><a href="t&c.html">Terms & Conditions</a></p>
+</footer>
+
+</body>
+</html>
