@@ -2,7 +2,7 @@ function checkPswd() {
     var username = document.getElementById("usrname").value;
     var password = document.getElementById("pswd").value;
     if (username == "rootM" && password == "rootM") {
-         window.location="#";
+         window.location="dcr.html";
     }
     else if( username == "icm1" && password == "icm1") {
       window.location.href="https://sites.google.com/view/innocmf/career";
