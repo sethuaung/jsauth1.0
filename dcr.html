@@ -13,13 +13,30 @@
 <!-- <meta http-equiv="refresh" content="30"> -->
 <!-- Setting the viewport to make your website look good on all devices: -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <!-- Favicons -->
 <link href="images/logo/inno-logo.ico" rel="icon">
 <link href="images/logo/sg_logo_200x200.png" rel="felix-logo">
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 5px;
+    background-color: #f8fafc;
+    padding: auto;
+  }
+  
+  .grid-container > div {
+    background-color: #f8fafc(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+  </style>
 </head>
 <body>
 
@@ -38,105 +55,150 @@
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <div class="w3-container">
-  <h2>Collection Report</h2>
-  <p></p>
-  </div>
-  <div class="w3-bar w3-black">
-    <p class="w3-bar-item w3-button" onclick="openInfo('ClientInfo')">Daily Collection</p>
-  </div>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9ulqxJsELQpAfxIABLFDdsKlYYs5682WVjAh2DHdAMR8tyQ/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">  
-    <div id="ClientInfo" class="w3-container info" style="display: none;">
-        <div class="w3-row-padding w3-padding-16">
-          <div class="w3-col m3">
-            <label for="p" class="w3-text-teal"><b>Choose Branch</b></label>
-              <select class="w3-select" id="division" name="entry.1162786883">
-                  <option value="Thanlyin Branch" disabled selected>Choose your branch</option>
-                  <option value="Head Office">Head Office</option>
-                  <option value="South Okkalapa">South Okkalapa</option>
-                  <option value="Thanlyin">Thalyin</option>
-                  <option value="Taikkyi">Taikkyi</option>
-                  <option value="Mawlamyine">Mawlamyine</option>
-                  <option value="Magway">Magway</option>
-                  <option value="Naypyitaw">Naypyitaw</option>
-                  <option value="Mingaladon">Mingaladon</option>
-                  <option value="Billin">Billin</option>
-                  <option value="Thongwa">Thongwa</option>
-                  <option value="Sagaing">Sagaing</option>
-                  <option value="Dawei">Dawei</option>
-                  <option value="Panglong">Panglong</option>
-                  <option value="Hpa_an">Hpa_an</option>
-                  <option value="Htan Ta Pin">Htan Ta Pin</option>
-              </select>
-          </div>
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Collection Date</b></label>
-            <input class="w3-input w3-border" id="date" name="entry.957517461" type="date" placeholder="collectiondate" required name="date">
-          </div>
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Total Villages</b></label>
-            <input class="w3-input w3-border" id="totalvillages" name="entry.121117841" type="number" placeholder="Total Villages" required name="Total Villages">
-          </div>  
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Total Clients</b></label>
-            <input class="w3-input w3-border" id="totalclients" name="entry.66117768" type="number" placeholder="Total Clients" required name="Total Clients">
-          </div> 
-        </div>
-        <div class="w3-row-padding w3-padding-16">
-          
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
-            <input class="w3-input w3-border" id="collectionamount" name="entry.1464137031" type="number" placeholder="Collection Amount" required name="Collection Amount">
-          </div>
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Actual Collected Clients</b></label>
-            <input class="w3-input w3-border" id="acoclients" name="
-            entry.1196809864" type="number" placeholder="Actual Collected Clients" required name="acoclients">
-          </div>
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Actual Collected Amount</b></label>
-            <input class="w3-input w3-border" id="acoamount" name="entry.999172378" type="number" placeholder="Actual Collected Amount" required name="acoamount">
-          </div>
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Remaining Clients</b></label>
-            <input class="w3-input w3-border" id="remainingclients" name="entry.1313337293" type="number" placeholder="Remaining Clients" required name="remainingclients">
-          </div>
-        </div>
-      
-        <div class="w3-row-padding w3-padding-16">
-          
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Remaining Amount</b></label>
-            <input class="w3-input w3-border" id="remainingamount" name="entry.1671360575" type="number" placeholder="Remaining Amount" required name="remainingamount">
-          </div>
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>New Appointment Date</b></label>
-            <input class="w3-input w3-border" id="appdate" name="entry.167448148" type="date" placeholder="New Appointment Date" required name="appdate">
-          </div>
-          
-          <div class="w3-col m3">
-            <label for="fname" class="w3-text-teal"><b>Overdue Collection(Withinmonth)</b></label>
-            <input class="w3-input w3-border" id="withinmonth" name="entry.1150562011" type="number" placeholder="Within Month" required name="withinmonth">
-            </div>
-            <div class="w3-col m3">
-              <label for="fname" class="w3-text-teal"><b>Overdue Collection(Lastmonth)</b></label>
-            <input class="w3-input w3-border" id="lastmonth" name="entry.1030610327" type="number" placeholder="Last Month" required name="lastmonth">
-          </div>
-          
-        </div>
-        <div class="w3-row-padding w3-padding-16">
-          <div class="w3-container">
-            <label for="fname" class="w3-text-teal"><b>Remarks</b></label>
-            <input class="w3-input w3-border" id="remarks" name="entry.571450666" type="text" placeholder="Remarks" required name="remarks">
-          </div>  
-        </div>
-      </div>
-      <div class="w3-row-padding">
-        <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button><br>
-      </div>
-      </form>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='dcrr.html';}"></iframe>
+    <div class="w3-container">
+    <h2>Collection Report</h2>
+    <p></p>
     </div>
+    <div class="w3-bar w3-black">
+        <p class="w3-bar-item w3-button" onclick="openInfo('ClientInfo')">Daily Collection</p>
+    </div>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9ulqxJsELQpAfxIABLFDdsKlYYs5682WVjAh2DHdAMR8tyQ/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">
+        <div id="ClientInfo" class="w3-container info" style="display: none;">
+            <!-- start row -->
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Choose Date</b></label>
+                    <input class="w3-input w3-border" id="todaydate" name="entry.1926480204" type="date" placeholder="reportdate" required name="todaydate">
+                </div>
+                <div class="w3-col m2">
+                    <label for="p" class="w3-text-teal"><b>Choose Branch</b></label>
+                    <select class="w3-select" id="division" name="entry.1162786883">
+                    <option value="Thanlyin Branch" disabled selected>Choose your branch</option>
+                    <option value="Head Office">Head Office</option>
+                    <option value="South Okkalapa">South Okkalapa</option>
+                    <option value="Thanlyin">Thalyin</option>
+                    <option value="Taikkyi">Taikkyi</option>
+                    <option value="Mawlamyine">Mawlamyine</option>
+                    <option value="Magway">Magway</option>
+                    <option value="Naypyitaw">Naypyitaw</option>
+                    <option value="Mingaladon">Mingaladon</option>
+                    <option value="Billin">Billin</option>
+                    <option value="Thongwa">Thongwa</option>
+                    <option value="Sagaing">Sagaing</option>
+                    <option value="Dawei">Dawei</option>
+                    <option value="Panglong">Panglong</option>
+                    <option value="Hpa_an">Hpa_an</option>
+                    <option value="Htan Ta Pin">Htan Ta Pin</option>
+                    </select>
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Collection Date</b></label>
+                    <input class="w3-input w3-border" id="date" name="entry.957517461" type="date" placeholder="collectiondate" required name="date">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Total Villages</b></label>
+                    <input class="w3-input w3-border" id="totalvillages" name="entry.121117841" type="number" placeholder="Total Villages" required name="Total Villages">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Total Clients</b></label>
+                    <input class="w3-input w3-border" id="totalclients" name="entry.66117768" type="number" placeholder="Total Clients" required name="Total Clients">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+                    <input class="w3-input w3-border" id="collectionamount" name="entry.1464137031" type="number" placeholder="Collection Amount" required name="Collection Amount">
+                </div>
+            </div>
+            <!-- end row -->
+
+            <!-- start row -->
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-col m1"></div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Actual Collected Clients</b></label>
+                    <input class="w3-input w3-border" id="acoclients" name="entry.1196809864" type="number" placeholder="Actual Collected Clients" required name="acoclients">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Actual Collected Amount</b></label>
+                    <input class="w3-input w3-border" id="acoamount" name="entry.999172378" type="number" placeholder="Actual Collected Amount" required name="acoamount">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Remaining Clients</b></label>
+                    <input class="w3-input w3-border" id="remainingclients" name="entry.1313337293" type="number" placeholder="Remaining Clients" required name="remainingclients">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Remaining Amount</b></label>
+                    <input class="w3-input w3-border" id="remainingamount" name="entry.1671360575" type="number" placeholder="Remaining Amount" required name="remainingamount">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>New Appointment Date</b></label>
+                    <input class="w3-input w3-border" id="appdate" name="entry.167448148" type="date">
+                </div>
+                <div class="w3-col m1"></div>
+            </div>
+            <!-- end row -->
+
+             <!-- start row -->
+             <div class="w3-row-padding w3-padding-8">
+                <h5 class="w3-text-teal"><b>Overdue Collection</b></h5>
+                
+                <div class="w3-col m1">
+                    <label for="fname" class="w3-text-teal"><b>No.</b></label>
+                    <input class="w3-input w3-border" id="lastmonth" name="entry.1319840460" type="number" placeholder="number" required name="no-withinmonth">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Withinmonth</b></label>
+                    <input class="w3-input w3-border" id="withinmonth" name="entry.1150562011" type="number" placeholder="Within Month" required name="withinmonth">
+                </div>
+                <div class="w3-col m1">
+                    <label for="fname" class="w3-text-teal"><b>No.</b></label>
+                    <input class="w3-input w3-border" id="lastmonth" name="entry.2026387088" type="number" placeholder="number" required name="no-lastmonth">
+                </div>
+                <div class="w3-col m2">
+                    <label for="fname" class="w3-text-teal"><b>Lastmonth</b></label>
+                    <input class="w3-input w3-border" id="lastmonth" name="entry.1030610327" type="number" placeholder="Last Month" required name="lastmonth">
+                </div>
+                <div class="w3-col m4">
+                    
+                </div>
+                <div class="w3-col m2"></div>
+            </div>
+            <!-- end row -->
+
+            <!-- start row -->
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-col m12">
+                    <label for="fname" class="w3-text-teal"><b>Remarks</b></label>
+                    <input class="w3-input w3-border" id="remarks" name="entry.571450666" type="text" placeholder="Remarks" required name="remarks">
+                </div>
+            </div>
+            <!-- end row -->
+
+            <!-- start row -->
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-col m2"></div>
+                <div class="w3-col m2"></div>
+                <div class="w3-col m2"></div>
+                <div class="w3-col m2"></div>
+                <div class="w3-col m2"></div>
+                <div class="w3-col m2"></div>
+            </div>
+            <!-- end row -->
+
+
+             <!-- start row -->
+             <div class="w3-row-padding w3-padding-16">
+                <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button>
+            </div>
+            <!-- end row -->
+
+             
+
+        </div>
+    </form>
+  
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='dcrr.html';}"></iframe>
+    </div>
+    <!-- End Page Content -->
       <script>
       function openInfo(infoName) {
         var i;
